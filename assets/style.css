@@ -1,8 +1,3 @@
-/*html {
-  padding: 0px;
-  margin: 0px;
-}*/
-
 .bg-image {
   position: fixed;
   top: 0;
@@ -11,7 +6,7 @@
   height: 100%;
 
   background: rgb(43, 20, 2);
-  background-image: url(/assets/img/background.jpg);
+  background-image: url(assets/img/background.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
