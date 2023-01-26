@@ -1,0 +1,255 @@
+/*html {
+  padding: 0px;
+  margin: 0px;
+}*/
+
+.bg-image {
+  position: fixed;
+  top: 0;
+  z-index: -3;
+  width: 100%;
+  height: 100%;
+
+  background: rgb(43, 20, 2);
+  background-image: url(/assets/img/background.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.bg-primary {
+  --bs-bg-opacity: 1;
+  background-color: rgb(194, 157, 128) !important;
+}
+
+.text-center {
+  font-family: "Satisfy", cursive;
+  font-size: 4rem;
+  color: #f1bd9d !important;
+  letter-spacing: 0.9rem;
+  text-shadow: 3px 3px rgb(110, 46, 6);
+}
+
+.form-label,
+.nav-link {
+  color: #331202 !important;
+}
+
+.form-control {
+  --bs-border-color: #f7e0c8d8;
+}
+
+.form-control::placeholder {
+  color: #765f4d;
+  opacity: 1;
+}
+
+.border {
+  --bs-border-color: #f7e0c8d8;
+}
+
+.logo {
+  height: 60px;
+  margin: -5px 0 -5px 0;
+}
+
+.dropdown-menu {
+  border: none;
+  box-shadow: inset 1px 1px rgba(255, 255, 255, 0.2),
+    inset -1px -1px rgba(255, 255, 255, 0.1),
+    1px 3px 24px -1px rgba(0, 0, 0, 0.15);
+  background-color: transparent;
+  background-image: linear-gradient(
+    125deg,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.2) 70%
+  );
+  backdrop-filter: blur(5px);
+  --bs-dropdown-link-hover-bg: rgba(255, 255, 255, 0.4);
+}
+
+.dropdown-menu a {
+  color: #fff;
+}
+
+.accordion {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  width: 100%;
+  min-height: 34.5rem;
+}
+
+@media (min-width: 1200px) {
+  .accordion {
+    min-height: 40rem;
+  }
+}
+
+.accordion > div {
+  width: 50%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  border: 3px solid aliceblue;
+  border-radius: 10px;
+  position: relative;
+}
+
+.accordion > div:hover {
+  flex-shrink: 0;
+}
+
+.accordion div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 992px) {
+  .navbar-brand {
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar-brand {
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+  }
+}
+
+@media (min-width: 1400px) {
+  .navbar-brand {
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+  }
+}
+
+.content-accordion {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  height: 25%;
+  padding: 20px;
+}
+
+.btn-form {
+  width: 5.9rem;
+  height: 3rem;
+  cursor: pointer;
+  border: none;
+  font-family: "Comfortaa", cursive;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.4rem;
+  border-radius: 4px;
+  box-shadow: inset 0px 3px 5px rgba(255, 255, 255, 0.5),
+    0px 0px 10px rgba(0, 0, 0, 0.15);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    45deg,
+    rgba(2, 0, 36, 0) 5%,
+    rgba(255, 255, 255, 0.5) 6%,
+    rgba(255, 255, 255, 0) 9%,
+    rgba(255, 255, 255, 0.5) 10%,
+    rgba(255, 255, 255, 0) 17%,
+    rgba(255, 255, 255, 0.5) 19%,
+    rgba(255, 255, 255, 0) 21%
+  );
+  background-size: 150%;
+  background-position: right;
+  transition: 1s;
+}
+
+.btn-form:hover {
+  background-color: #4c271a;
+  background-position: left;
+  color: white;
+  box-shadow: inset 0px 3px 5px rgba(255, 255, 255, 1),
+    0px 0px 10px rgba(56, 28, 1, 0.25);
+  filter: drop-shadow(3px 5px 5px rgba(0, 0, 0, 0.45));
+  cursor: pointer;
+}
+
+.btn-form:focus {
+  outline: none;
+}
+
+.multi-button {
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.1em;
+}
+
+.multi-button :nth-child(1) {
+  border-radius: 20px 0 0 20px;
+}
+.multi-button :nth-child(2) {
+  border-radius: 0 20px 20px 0;
+}
+
+.btn-form:active {
+  filter: none;
+  transform: scale(0.95);
+}
+
+input[type="time" i] {
+  display: inline-flex;
+  padding: 4px 2px;
+}
+
+.carousel-item {
+  height: 40rem;
+}
+
+.carousel-item img {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  min-height: 40rem;
+}
+
+.form-control:hover,
+.form-control:focus {
+  border-color: #2a1306;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(113, 50, 3, 0.25);
+  cursor: pointer;
+}
+
+.btn-down {
+  width: 8rem;
+  height: 2.5rem;
+}
+
+.nav-link-footer {
+  display: block;
+  font-size: 0.7rem;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+}
+
+.title {
+  color: #230c00;
+  text-align: center;
+  font-family: "Satisfy", cursive;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
