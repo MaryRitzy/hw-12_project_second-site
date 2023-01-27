@@ -156,13 +156,13 @@ body {
 }
 
 .btn-form {
-  width: 5.6rem;
+  width: 5.2rem;
   height: 3rem;
   cursor: pointer;
   border: none;
   font-family: "Comfortaa", cursive;
   color: rgba(255, 255, 255, 0.5);
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   border-radius: 4px;
   box-shadow: inset 0px 3px 5px rgba(255, 255, 255, 0.5),
     0px 0px 10px rgba(0, 0, 0, 0.15);
